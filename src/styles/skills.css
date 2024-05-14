@@ -1,0 +1,210 @@
+.skillsContainer{
+  background: transparent;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  color: white;
+}
+.skills_glass_box{
+  backdrop-filter: blur(20px) saturate(75%);
+  -webkit-backdrop-filter: blur(20px) saturate(75%);
+  background-color: #a3a3a32b;
+  border: 1px solid rgba(255, 255, 255, .288);
+  border-radius: 20px;
+  width: 70%;
+  margin-left: 30%;
+}
+.skills_glass_box h2{
+  text-align: center;
+}
+.skills_glass_box_cards{
+  width:auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  height: auto;
+  padding: 20px;
+  background: transparent;
+  border-radius: 20px;
+  transition:.5s ease-in-out;
+}
+.progress-chart-container
+{
+  position:relative;
+  width:auto;
+  height:auto;
+  display: flex;
+  justify-content: center;
+}
+.progress-chart-container .progress-chart-card
+{
+  position:relative;
+  width:250px;
+  backdrop-filter: blur(20px) saturate(75%);
+  -webkit-backdrop-filter: blur(20px) saturate(75%);
+  background-color: #a3a3a32b;
+  border: 1px solid rgba(255, 255, 255, .288);
+  border-radius: 20px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  height:300px;
+  text-align:center;
+  overflow:hidden;
+  transition:0.5s;
+}
+.progress-chart-container .progress-chart-card:hover
+{
+  transform:translateY(-10px);
+  box-shadow:0 15px 35px rgba(0,0,0,.5);
+}
+.progress-chart-container .progress-chart-card:before
+{
+  content:'';
+  position:absolute;
+  top:0;
+  left:-50%;
+  width:100%;
+  height:100%;
+  background:rgba(255,255,255,.03);
+  pointer-events:none;
+  z-index:1;
+}
+.progress-chart-percent
+{
+  position:relative;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  box-shadow: inset 0 0 50px #000;
+  background:#a3a3a32b;
+  z-index:1000;
+}
+.progress-chart-percent .progress-chart-num
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+}
+.progress-chart-percent .progress-chart-num h2
+{
+  color:#777;
+  font-weight:700;
+  font-size:40px;
+  transition:0.5s;
+}
+.progress-chart-card:hover .progress-chart-percent .progress-chart-num h2
+{
+  color:#fff;
+  font-size:60px;
+}
+.progress-chart-percent .progress-chart-num h2 span
+{
+  color:#777;
+  font-size:24px;
+  transition:0.5s;
+}
+.progress-chart-card:hover .progress-chart-percent .progress-chart-num h2 span
+{
+  color:#fff;
+}
+.progress-chart-text
+{
+  position:relative;
+  color:#777;
+  margin-top:20px;
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  transition:0.5s;
+}
+.progress-chart-card:hover .progress-chart-text
+{
+  color:#fff;
+}
+.progress-chart-percent svg {
+  position:relative;
+  width:150px;
+  height:150px;
+  z-index:1000;
+}
+.progress-chart-percent svg circle{
+  width:100%;
+  height:100%;
+  fill:none;
+  stroke:#a3a3a32b;
+  stroke-width:10;
+  stroke-linecap:round;
+  transform:translate(5px,5px);
+}
+.progress-chart-percent svg circle:nth-child(2)
+{
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+}
+.progress-chart-card.html svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * 70) / 100);
+  stroke: white;
+}
+.progress-chart-card.css svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * 70) / 100);
+  stroke: white;
+}
+.progress-chart-card.javascript svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * 90) / 100);
+  stroke: white;
+}
+
+.progress-chart-card.react svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * 80) / 100);
+  stroke: white;
+}
+
+.progress-chart-card.node  svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * 95) / 100);
+  stroke: white;
+}
+
+.progress-chart-card.reactnative  svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * 85) / 100);
+  stroke: white;
+}
+
+.progress-chart-card.typescript  svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * 60) / 100);
+  stroke: white;
+}
+.progress-chart-card.git  svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * 70) / 100);
+  stroke: white;
+}
+
+@media (max-width: 768px) {
+  .progress-chart-container{
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .progress-chart-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+
+

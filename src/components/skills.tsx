@@ -7,7 +7,7 @@ export const Skills = () =>{
       <div className='skills_glass_box'>
         <section className='reveal'>
         <div>
-          <h2>Skills</h2>
+          <h1>Skills</h1>
         </div>
         <div className='skills_glass_box_cards'>
           <div className="progress-chart-container ">

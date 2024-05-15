@@ -6,7 +6,7 @@
     color: white;
 }
 .about_glass_box{
-    width:35%;
+    width:55%;
     height: 40%;
     padding: 20px;
     backdrop-filter: blur(20px) saturate(75%);

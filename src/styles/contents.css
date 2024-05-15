@@ -79,18 +79,16 @@
 .console-container {
   font-family:Centra;
   font-size:52px;
-  text-align:center;
+  align-items: center;
   height:fit-content;
   width:800px;
   display:flex;
   gap: 20px;
   position:absolute;
+  top: 15%;
+  z-index: 9999;
   color:white;
-  top: 50%;
-  margin-top: 5%;
-  bottom:0px;
   left:10%;
-  right:0px;
 }
 .console-underscore {
   display:inline-block;
@@ -101,7 +99,7 @@
 .content_glass_box{
   width:28%;
   height: auto;
-  margin-top: 20%;
+  margin-top: 10%;
   margin-left: 25%;
   padding: 3%;
   backdrop-filter: blur(20px) saturate(75%);

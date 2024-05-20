@@ -14,19 +14,18 @@
 }
 
 .area{
-    background: black;  
+    background:transparent;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
-	height: 400vh;
-    background-repeat: no-repeat;
-  	background-size: cover;
-  	background-position: center center;
+	height: 800vh;
 }
 
 .circles{
     position: absolute;
     top: 0;
     left: 0;
+    padding: 0px;
+    margin: 0px;
     width: 100%;
     height: 100%;
 }
@@ -38,8 +37,8 @@
     width: 20px;
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
-    animation: animate 25s linear infinite;
-    bottom: -300px;   
+    animation: animate 10s linear infinite;
+    bottom: -500px;   
 }
 
 .circles li:nth-child(1){

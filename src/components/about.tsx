@@ -1,3 +1,4 @@
+import {BrowserRouter as Router } from 'react-router-dom';
 import '../styles/about.css'
 
 export const About = () =>{
@@ -19,6 +20,7 @@ export const About = () =>{
     window.addEventListener('scroll', revealOnScroll);
 
     return(
+      <Router>
         <div className="aboutContainer">
             <div className='about_glass_box'>
                 <section className="reveal">
@@ -38,5 +40,6 @@ export const About = () =>{
                 </section>
                 </div>
         </div>
+        </Router>
     )
 }

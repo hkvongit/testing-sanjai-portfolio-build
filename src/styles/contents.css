@@ -8,88 +8,36 @@
 }
 .animationWrapper {
   display: flex;
-  height: 100vh;
+  height: 80vh;
   align-items: center;
+  position: relative;
 }
-.animationContainer{
-  display: flex;
-  flex-direction: column;
-  text-align:left;
-  overflow:hidden;
-  height: 100px;
-  padding-left: 10%;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  perspective: 1000;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0, 0, 0);
+.name-container{
   font-family: Centra;
-  font-weight: 300;
-  font-size: 40px; 
-  color: white;    
+  font-weight: 400;
+  font-size: 52px;
+  height: auto;
+  margin-left: 10%;
+  width: 40%;
 }
-.animationContainer div {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.animationContainer div:first-of-type {
-  animation: showup infinite;
-}
-
-.animationContainer div:last-of-type {
-  width: 400px;
-  animation: reveal infinite;
-}
-
-.animationContainer div:last-of-type span {
-  margin-left: -355px;
-  animation: slidein 5s infinite;
-}
-
-@keyframes showup {
-  0% { opacity: 0; }
-  20% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { opacity: 0; }
-}
-
-@keyframes slidein {
-  0% { margin-left: -800px; }
-  20% { margin-left: -800px; }
-  35% { margin-left: 0px; }
-  100% { margin-left: 0px; }
-}
-
-@keyframes reveal {
-  0% { opacity: 0; width: 0px; }
-  20% { opacity: 1; width: 0px; }
-  30% { width: 355px; }
-  80% { opacity: 1; }
-  100% { opacity: 0; width: 355px; }
-}
-
-/* Content Animation*/
 
 .hidden {
   opacity:0;
 }
+
 .console-container {
   font-family:Centra;
   font-size:52px;
   align-items: center;
-  height:fit-content;
-  width:800px;
+  height:auto;
+  width:auto;
   display:flex;
   gap: 20px;
-  position:absolute;
-  top: 15%;
-  z-index: 9999;
+  position:relative;
   color:white;
-  left:10%;
+  margin-top: 10px;
 }
+
 .console-underscore {
   display:inline-block;
   position:relative;
@@ -100,7 +48,7 @@
   width:28%;
   height: auto;
   margin-top: 10%;
-  margin-left: 25%;
+  margin-left: 10%;
   padding: 3%;
   backdrop-filter: blur(20px) saturate(75%);
   -webkit-backdrop-filter: blur(20px) saturate(75%);

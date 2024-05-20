@@ -1,8 +1,10 @@
+import { BrowserRouter as Router } from 'react-router-dom'
 import '../styles/skills.css'
 
 export const Skills = () =>{
 
     return(
+      <Router>
         <div className="skillsContainer">
       <div className='skills_glass_box'>
         <section className='reveal'>
@@ -142,5 +144,6 @@ export const Skills = () =>{
       </section>
       </div>
     </div>
+    </Router>
     )
 }

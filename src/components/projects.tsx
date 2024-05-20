@@ -1,5 +1,6 @@
 import '../styles/projects.css'
 import Card from '../components/projectCard'
+import {BrowserRouter as Router } from 'react-router-dom';
 
 export const Projects = () =>{
 
@@ -37,6 +38,7 @@ export const Projects = () =>{
       ];
 
     return(
+      <Router>
         <div className="projectsContainer">
             <div className="projects-card-glass-box">
                 <div>
@@ -54,5 +56,6 @@ export const Projects = () =>{
                 </div>
           </div>
     </div>
+    </Router>
     )
 }

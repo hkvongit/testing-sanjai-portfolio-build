@@ -4,9 +4,10 @@ import logo from '../assets/images/logo_white-removebg-preview.png';
 import navIcon1 from '../assets/images/nav-icon1.svg';
 import navIcon2 from '../assets/images/nav-icon2.svg'
 import navIcon3 from '../assets/images/nav-icon3.svg'
-import { BrowserRouter as Router} from 'react-router-dom';
+import { Route, BrowserRouter as Router} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link'
 import '../styles/navbar.css'
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   const hamburgerRef = useRef<HTMLDivElement>(null);
@@ -56,10 +57,10 @@ export const NavBar = () => {
         </div>
         <div className="nav-links-div">
         <ul className="nav-links" ref={navLinksRef}>
-            <li><a href="https://www.web-leb.com/code">Home</a></li>
-            <li><a href="https://www.web-leb.com/code">About me</a></li>
-            <li><a href="https://www.web-leb.com/code">Skills</a></li>
-            <li><a href="https://www.web-leb.com/code">Works</a></li>
+            <li><a href="/">Home</a></li>
+            <li><Link to ="/about">About me</Link></li>
+            <li><Link to ="/skills">Skills</Link></li>
+            <li><Link to="/projects">Works</Link></li>
             <li> <div className="navbar-text-div" ref={contactsRef} >
               <span className="navbar-text">
               <div className="social-icon">

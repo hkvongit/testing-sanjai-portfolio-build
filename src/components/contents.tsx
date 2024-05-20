@@ -45,15 +45,15 @@ export const Content = () => {
     <Router>
       <div className="contentContainer">
         <div className="animationWrapper">
-          <div className="animationContainer">
-            <div>Hi,</div>
-            <div>
+          <div className='name-container'>
+          <div>Hi,</div>
+          <div>
               <span>I am Sanjai Samson</span>
-              </div>
           </div>
           <div className='console-container'>
             <span id='text' ref={consoleRef}></span>
             <div className='console-underscore' id='console'>&#95;</div>
+          </div>
           </div>
           <div className='content_glass_box'>
           <h2>Welcome to My Portfolio</h2>

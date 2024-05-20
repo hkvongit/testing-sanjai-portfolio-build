@@ -44,7 +44,6 @@ export const NavBar = () => {
   }, []);
 
   return (
-    <Router>
       <Navbar className="navbarcontainer">
       <div className="logo display: flex;align-items: center;">
          <img src={logo} alt="image"></img>
@@ -57,20 +56,20 @@ export const NavBar = () => {
         </div>
         <div className="nav-links-div">
         <ul className="nav-links" ref={navLinksRef}>
-            <li><a href="/">Home</a></li>
+            <li><Link to="/">Home</Link></li>
             <li><Link to ="/about">About me</Link></li>
             <li><Link to ="/skills">Skills</Link></li>
             <li><Link to="/projects">Works</Link></li>
             <li> <div className="navbar-text-div" ref={contactsRef} >
               <span className="navbar-text">
               <div className="social-icon">
-                <a href="#">
+                <a href="www.linkedin.com/in/sanjai-samson">
                   <img src={navIcon1} alt="" />
                 </a>
                 <a href="#">
                   <img src={navIcon2} alt="" />
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/sanjai__samson?igsh=YmtzNGpueXdvd2Fz">
                   <img src={navIcon3} alt="" />
                 </a>
               </div>
@@ -85,12 +84,5 @@ export const NavBar = () => {
         </div>
         </Container>
         </Navbar>
-        {/* <div className="buttoncontainer">
-      <button className="button" data-text="Awesome">
-        <span className="actual-text"> Hello Dude </span>
-        <span aria-hidden="true" className="hover-text"> Hello Dude </span>
-    </button> 
-  </div> */}
-    </Router>
   )
 }

@@ -2,14 +2,17 @@
 @import url('https://fonts.googleapis.com/css?family=Khula:700');
 
 .contentContainer{
-  color: white;
-  width: auto;
-  height: auto;
+  background: transparent;
+    height: auto;
+    width: auto;
+    color: white;
 }
 .animationWrapper {
   display: flex;
-  height: 80vh;
+  margin-top: 5%;
+  margin-bottom: 10%;
   align-items: center;
+  align-content: center;
   position: relative;
 }
 .name-container{
@@ -69,7 +72,7 @@
   width: 150px;
   height: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 20px;
   align-items: center;
   color: white;
@@ -85,4 +88,23 @@
   justify-content: center;
   gap: 30px;
   margin-top: 20px;
+}
+
+.linkedin-git-mail-div{
+  display: flex;
+  justify-content: center;
+}
+
+.linkedin-git-mail-div a {
+  display: inline-block;
+  margin: 10px; /* Adjust spacing between icons */
+  transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
+}
+
+.linkedin-git-mail-div a:hover,
+.linkedin-git-mail-div a:focus {
+  color: black;
+  transform: translateY(-0.25em);
+  text-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: scale(1.2);
 }

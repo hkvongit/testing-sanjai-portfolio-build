@@ -1,34 +1,55 @@
-import { NavBar } from './components/navbar' 
-import { Content } from'./components/contents'; 
-import {Skills} from './components/skills' 
-import {About} from './components/about' 
-import {Projects} from './components/projects' 
-import './App.css' 
-import { BrowserRouter, Route } from 'react-router-dom'; 
-function App() { 
-return ( 
-<div className="App"> 
-    <div className="area" > 
-        <ul className="circles"> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-        </ul> 
-    </div > 
-    <div className='pages'> 
-        <NavBar /> 
-        <Content/> 
-        <About /> 
-        <Skills /> 
-        <Projects/> 
-    </div> 
-</div> 
-) 
-} export default App
+import { NavBar } from './components/navbar'
+import { Content } from './components/contents';
+import { Skills } from './components/skills'
+import { About } from './components/about'
+import { Projects } from './components/projects'
+import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="App">
+        <div className="area" >
+          <ul className="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div >
+        <div className='pages'>
+          <Routes>
+            <Route path="/" element={<>
+              <NavBar />
+              <Content />
+              <About />
+              <Skills />
+              <Projects />
+            </>} />
+            <Route path="/about" element={<>
+              <NavBar />
+              <About />
+            </>} />
+            <Route path="/skills" element={<>
+              <NavBar />
+              <Skills />
+            </>} />
+            <Route path="/projects" element={<>
+              <NavBar />
+              <Projects />
+            </>} />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
+  )
+}
+
+export default App

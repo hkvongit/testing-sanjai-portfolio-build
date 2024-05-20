@@ -5,6 +5,7 @@ import { DownloadIcon, GithubIcon, LucideLinkedin, MailCheckIcon } from 'lucide-
 
 
 function consoleText(words:any, id:any) {
+  
   const target = document.getElementById(id);
 
   if (!target) return; 
@@ -32,17 +33,17 @@ export const Content = () => {
   const consoleRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const words = ['Web Developer', 'Software Engineer'];
 
-    const intervalId = consoleText(words, 'text'); // Call consoleText with parameters
+    const intervalId = consoleText(words, 'text'); 
 
     return () => {
-      clearInterval(intervalId); // Cleanup interval on component unmount
+      clearInterval(intervalId); 
     };
   }, []);
  
   return (
-    <Router>
       <div className="contentContainer">
         <div className="animationWrapper">
           <div className='name-container'>
@@ -60,12 +61,23 @@ export const Content = () => {
           <p>Hello, I'm a web developer and a software Engineer specializing in creating modern and responsive websites and Applications.</p>
           <h3>If you are intrested Let's work together</h3>
           <div className='button_div'>
-          <button>Resume <DownloadIcon height='20px'/></button>
-          <button><LucideLinkedin/> <GithubIcon/> <MailCheckIcon/> </button>
+              <button>Resume <DownloadIcon height='20px'/></button>
+              <button>
+                <div className='linkedin-git-mail-div'>
+                  <a href="https://www.linkedin.com/in/sanjai-samson" target="_blank" rel="noopener noreferrer">
+                    <LucideLinkedin className='linkedin-icon' color='white' />
+                  </a>
+                  <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+                    <GithubIcon className='github-icon' color='white' />
+                  </a>
+                  <a href="mailto:your-email@example.com">
+                    <MailCheckIcon className='mail-icon' color='white' />
+                  </a>
+                </div>
+              </button>
           </div>
           </div>
         </div>
       </div>
-    </Router>
   )
 }

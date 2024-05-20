@@ -1,7 +1,13 @@
 import {BrowserRouter as Router } from 'react-router-dom';
 import '../styles/about.css'
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export const About = () =>{
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
 
     const revealElement = document.querySelector('.reveal') as HTMLElement;
 
@@ -20,7 +26,6 @@ export const About = () =>{
     window.addEventListener('scroll', revealOnScroll);
 
     return(
-      <Router>
         <div className="aboutContainer">
             <div className='about_glass_box'>
                 <section className="reveal">
@@ -35,11 +40,12 @@ export const About = () =>{
                         Driven by a relentless pursuit of excellence, I continuously seek to expand my knowledge and stay at the forefront of emerging trends, ensuring that my work not only meets but exceeds the highest industry standards.
                         </p>
                         <div className='button-div'>
-                    <button><a href="#">View My Work</a></button>
+                    <button>
+                    <Link to="/projects" target="_blank" rel="noopener noreferrer">
+                  </Link>View projects</button>
                     </div>
                 </section>
                 </div>
         </div>
-        </Router>
     )
 }

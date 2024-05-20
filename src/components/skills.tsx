@@ -1,13 +1,16 @@
 import { BrowserRouter as Router } from 'react-router-dom'
 import '../styles/skills.css'
+import { useEffect } from 'react';
 
 export const Skills = () =>{
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
     return(
-      <Router>
         <div className="skillsContainer">
       <div className='skills_glass_box'>
-        <section className='reveal'>
         <div>
           <h1>Skills</h1>
         </div>
@@ -141,9 +144,7 @@ export const Skills = () =>{
             </div>
           </div>
       </div>
-      </section>
       </div>
     </div>
-    </Router>
     )
 }

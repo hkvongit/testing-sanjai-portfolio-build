@@ -1,6 +1,13 @@
-import { BrowserRouter as Router } from 'react-router-dom'
 import '../styles/skills.css'
 import { useEffect } from 'react';
+import javascriptLogo from '../assets/images/javascript-logo-png.webp'
+import HTML_Logo from '../assets/images/html-5-icon.png'
+import CSS_logo from '../assets/images/CSS3_logo.svg.png'
+import node_logo from '../assets/images/Node.js_logo.svg.png'
+import react_logo from '../assets/images/React-icon.svg.png'
+import react_native_logo from '../assets/images/react-native-logo.svg'
+import typescript_logo from '../assets/images/typescript.svg'
+import git_logo from '../assets/images/Git_icon.svg.png'
 
 export const Skills = () =>{
 
@@ -19,12 +26,12 @@ export const Skills = () =>{
             <div className="progress-chart-card html">
               <div className="progress-chart-box">
                 <div className="progress-chart-percent">
-                  <svg>
+                  {/* <svg>
                     <circle cx="70" cy="70" r="70"></circle>
                     <circle cx="70" cy="70" r="70"></circle>
-                  </svg>
+                  </svg> */}
                   <div className="progress-chart-num">
-                    <h2>80<span>%</span></h2>
+                    <img src={HTML_Logo} style={{width:130}}></img>
                   </div>
                 </div>
                 <h2 className="progress-chart-text">Html</h2>
@@ -35,12 +42,12 @@ export const Skills = () =>{
             <div className="progress-chart-card css">
               <div className="progress-chart-box">
                 <div className="progress-chart-percent">
-                  <svg>
+                  {/* <svg>
                     <circle cx="70" cy="70" r="70"></circle>
                     <circle cx="70" cy="70" r="70"></circle>
-                  </svg>
+                  </svg> */}
                   <div className="progress-chart-num">
-                    <h2>70<span>%</span></h2>
+                  <img src={CSS_logo} style={{width:130}}></img>
                   </div>
                 </div>
                 <h2 className="progress-chart-text">CSS</h2>
@@ -51,12 +58,12 @@ export const Skills = () =>{
             <div className="progress-chart-card javascript">
               <div className="progress-chart-box">
                 <div className="progress-chart-percent">
-                  <svg>
+                  {/* <svg>
                     <circle cx="70" cy="70" r="70"></circle>
                     <circle cx="70" cy="70" r="70"></circle>
-                  </svg>
+                  </svg> */}
                   <div className="progress-chart-num">
-                    <h2>90<span>%</span></h2>
+                  <img src={javascriptLogo} style={{width:130}}></img>
                   </div>
                 </div>
                 <h2 className="progress-chart-text">Javascript</h2>
@@ -67,12 +74,12 @@ export const Skills = () =>{
             <div className="progress-chart-card react">
               <div className="progress-chart-box">
                 <div className="progress-chart-percent">
-                  <svg>
+                  {/* <svg>
                     <circle cx="70" cy="70" r="70"></circle>
                     <circle cx="70" cy="70" r="70"></circle>
-                  </svg>
+                  </svg> */}
                   <div className="progress-chart-num">
-                    <h2>80<span>%</span></h2>
+                  <img src={react_logo} style={{width:130}}></img>
                   </div>
                 </div>
                 <h2 className="progress-chart-text">Reactjs</h2>
@@ -83,12 +90,12 @@ export const Skills = () =>{
             <div className="progress-chart-card node">
               <div className="progress-chart-box">
                 <div className="progress-chart-percent">
-                  <svg>
+                  {/* <svg>
                     <circle cx="70" cy="70" r="70"></circle>
                     <circle cx="70" cy="70" r="70"></circle>
-                  </svg>
+                  </svg> */}
                   <div className="progress-chart-num">
-                    <h2>95<span>%</span></h2>
+                  <img src={node_logo} style={{width:130}}></img>
                   </div>
                 </div>
                 <h2 className="progress-chart-text">Nodejs</h2>
@@ -99,12 +106,12 @@ export const Skills = () =>{
             <div className="progress-chart-card reactnative">
               <div className="progress-chart-box">
                 <div className="progress-chart-percent">
-                  <svg>
+                  {/* <svg>
                     <circle cx="70" cy="70" r="70"></circle>
                     <circle cx="70" cy="70" r="70"></circle>
-                  </svg>
+                  </svg> */}
                   <div className="progress-chart-num">
-                    <h2>85<span>%</span></h2>
+                  <img src={react_native_logo} style={{width:130}}></img>
                   </div>
                 </div>
                 <h2 className="progress-chart-text">React Native</h2>
@@ -115,12 +122,12 @@ export const Skills = () =>{
             <div className="progress-chart-card typescript">
               <div className="progress-chart-box">
                 <div className="progress-chart-percent">
-                  <svg>
+                  {/* <svg>
                     <circle cx="70" cy="70" r="70"></circle>
                     <circle cx="70" cy="70" r="70"></circle>
-                  </svg>
+                  </svg> */}
                   <div className="progress-chart-num">
-                    <h2>60<span>%</span></h2>
+                  <img src={typescript_logo} style={{width:130}}></img>
                   </div>
                 </div>
                 <h2 className="progress-chart-text">Typescript</h2>
@@ -131,12 +138,12 @@ export const Skills = () =>{
             <div className="progress-chart-card git">
               <div className="progress-chart-box">
                 <div className="progress-chart-percent">
-                  <svg>
+                  {/* <svg>
                     <circle cx="70" cy="70" r="70"></circle>
                     <circle cx="70" cy="70" r="70"></circle>
-                  </svg>
+                  </svg> */}
                   <div className="progress-chart-num">
-                    <h2>70<span>%</span></h2>
+                  <img src={git_logo} style={{width:130}}></img>
                   </div>
                 </div>
                 <h2 className="progress-chart-text">Git</h2>

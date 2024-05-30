@@ -2,26 +2,43 @@
 @import url('https://fonts.googleapis.com/css?family=Khula:700');
 
 .contentContainer{
-  background: transparent;
     height: auto;
     width: auto;
+    display: flex;
+    margin-top: 5%;
     color: white;
+    justify-content: space-between;
+}
+.content-right-image{
+  width: 50%;
+  height: 600px;
+  background-image: url("../assets/images/background.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.content-description p{
+  font-family:'Courier New', Courier, monospace;
+  font-size: 20px;
+  line-height: 40px;
 }
 .animationWrapper {
   display: flex;
+  flex-direction: column;
   margin-top: 5%;
   margin-bottom: 10%;
+  width: 50%;
   align-items: center;
   align-content: center;
-  position: relative;
 }
 .name-container{
-  font-family: Centra;
-  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   font-size: 52px;
   height: auto;
   margin-left: 10%;
-  width: 40%;
+  width: auto;
 }
 
 .hidden {
@@ -29,8 +46,9 @@
 }
 
 .console-container {
-  font-family:Centra;
+  font-family:serif;
   font-size:52px;
+  font-weight: 400;
   align-items: center;
   height:auto;
   width:auto;
@@ -47,47 +65,30 @@
   top:-0.14em;
   left:10px;
 }
-.content_glass_box{
-  width:28%;
-  height: auto;
-  margin-top: 10%;
-  margin-left: 10%;
-  padding: 3%;
+.button_div{
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  gap: 30px;
+  
+}
+.resume-button{
+  width: 200px;
+  text-align: center;
+  align-content: center;
   backdrop-filter: blur(20px) saturate(75%);
   -webkit-backdrop-filter: blur(20px) saturate(75%);
   background-color: #a3a3a32b;
   border: 1px solid rgba(255, 255, 255, .288);
-  border-radius: 20px;
-  transition:.5s ease-in-out;
+  border-radius: 10px;
 }
-.content_glass_box h2{
-  font-family: Centra;
-  text-align: center;
-}
-.content_glass_box p{
-  font-family: Centra;
-  line-height: 30px;
-}
-.content_glass_box button{
-  width: 150px;
-  height: 40px;
-  display: flex;
-  justify-content: space-evenly;
-  gap: 20px;
-  align-items: center;
-  color: white;
-  overflow: hidden;
-  border-radius: 20px;
+.linkedin-git-mail-button{
+  width: 200px;
   backdrop-filter: blur(20px) saturate(75%);
   -webkit-backdrop-filter: blur(20px) saturate(75%);
-  background-color: #244a002b;
+  background-color: #a3a3a32b;
   border: 1px solid rgba(255, 255, 255, .288);
-}
-.button_div{
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .linkedin-git-mail-div{
@@ -104,6 +105,21 @@
 .linkedin-git-mail-div a:hover,
 .linkedin-git-mail-div a:focus {
   color: black;
+  transform: translateY(-0.25em);
+  text-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: scale(1.2);
+}
+
+.resume-button a{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+.resume-button a:hover,
+.resume-button a:focus {
+  color: white;
   transform: translateY(-0.25em);
   text-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: scale(1.2);

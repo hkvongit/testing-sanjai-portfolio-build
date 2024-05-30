@@ -1,0 +1,90 @@
+.contact-form-container{
+    width:100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    /* backdrop-filter: blur(20px) saturate(75%);
+    -webkit-backdrop-filter: blur(20px) saturate(75%);
+    background-color: #a3a3a32b;
+    border: 1px solid rgba(255, 255, 255, .288);
+    border-radius: 20px;
+    transition:.5s ease-in-out; */
+}
+.contact-form{
+    width:30%;
+    height: auto;
+}
+.form-components{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 30px;
+    border: 1px solid rgba(255, 255, 255, .288);
+    border-radius: 20px;
+    padding: 30px;
+}
+.contact-others{
+    width: 30%;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, .288);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    gap: 40px;
+}
+.contact-icons{
+    color: white;
+    display: flex;
+}
+.contact-icon {
+    display: inline-block;
+    margin-left: 14px;
+    justify-content: space-between;
+}
+.contact-icon a {
+    width: 42px;
+  height: 42px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  position: relative;
+  border-radius: 50%;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden; 
+}
+.contact-icon a::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.contact-icon a:hover::before {
+    transform: scale(1);
+}
+.contact-icon a img {
+	width: 40%;
+	z-index: 1;
+	transition: 0.3s ease-in-out;
+}
+.contact-icon a:hover img {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}

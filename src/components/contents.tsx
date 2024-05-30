@@ -1,5 +1,4 @@
 import {useEffect, useRef} from 'react'
-import { BrowserRouter as Router} from 'react-router-dom';
 import '../styles/contents.css'
 import { DownloadIcon, GithubIcon, LucideLinkedin, MailCheckIcon } from 'lucide-react';
 
@@ -55,8 +54,33 @@ export const Content = () => {
             <span id='text' ref={consoleRef}></span>
             <div className='console-underscore' id='console'>&#95;</div>
           </div>
+          <div className='content-description'>
+          <p>Hello, I'm a web developer and a software Engineer, specializing in creating modern and responsive websites and Applications.</p>
           </div>
-          <div className='content_glass_box'>
+          </div>
+          <div>
+          <div className='button_div'>
+            <div className='resume-button'>
+              <a>Resume 
+              <DownloadIcon height='20px'/>
+              </a>
+              </div>
+              <div className='linkedin-git-mail-button'>
+                <div className='linkedin-git-mail-div'>
+                  <a href="https://www.linkedin.com/in/sanjai-samson" target="_blank" rel="noopener noreferrer">
+                    <LucideLinkedin className='linkedin-icon' color='white' />
+                  </a>
+                  <a href="https://github.com/Sanjaisamson" target="_blank" rel="noopener noreferrer">
+                    <GithubIcon className='github-icon' color='white' />
+                  </a>
+                  <a href="mailto:your-email@example.com">
+                    <MailCheckIcon className='mail-icon' color='white' />
+                  </a>
+                </div>
+              </div>
+          </div>
+          </div>
+          {/* <div className='content_glass_box'>
           <h2>Welcome to My Portfolio</h2>
           <p>Hello, I'm a web developer and a software Engineer specializing in creating modern and responsive websites and Applications.</p>
           <h3>If you are intrested Let's work together</h3>
@@ -76,7 +100,10 @@ export const Content = () => {
                 </div>
               </button>
           </div>
-          </div>
+          </div> */}
+        </div>
+        <div className='content-right-image'>
+
         </div>
       </div>
   )

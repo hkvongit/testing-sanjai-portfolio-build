@@ -3,6 +3,7 @@ import { Content } from './components/contents';
 import { Skills } from './components/skills'
 import { About } from './components/about'
 import { Projects } from './components/projects'
+import { ContactForm } from './components/contactForm';
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -32,6 +33,7 @@ function App() {
               <About />
               <Skills />
               <Projects />
+              <ContactForm/>
             </>} />
             <Route path="/about" element={<>
               <NavBar />

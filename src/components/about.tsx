@@ -1,4 +1,3 @@
-import {BrowserRouter as Router } from 'react-router-dom';
 import '../styles/about.css'
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -40,9 +39,9 @@ export const About = () =>{
                         Driven by a relentless pursuit of excellence, I continuously seek to expand my knowledge and stay at the forefront of emerging trends, ensuring that my work not only meets but exceeds the highest industry standards.
                         </p>
                         <div className='button-div'>
-                    <button>
-                    <Link to="/projects" target="_blank" rel="noopener noreferrer">
-                  </Link>View projects</button>
+                  <Link to="/projects">
+                  <button className="buttons"><span>View Projects</span></button>
+                  </Link>
                     </div>
                 </section>
                 </div>

@@ -1,24 +1,27 @@
 
 import '../styles/contactForm.css'
 
-import { DownloadIcon, Facebook, GithubIcon, Instagram, Linkedin, LucideLinkedin, Mail, MailCheckIcon } from 'lucide-react';
+import { Facebook, Home, Instagram, Linkedin, Mail, Phone} from 'lucide-react';
 
 export const ContactForm = () => {
 
     return (
         <div>
-        <h1 style={{color:"white",textAlign:"center"}}>Contact Me</h1>
+        <h1 style={{color:"white", fontFamily:"sans-serif", fontSize:80}}>Contact Me</h1>
         <div className="contact-form-container">
             <div className='contact-form'>
+            {/* <div>
+                <p>Let's Talk, Drop me a Message</p>
+            </div> */}
         <form action="https://submit-form.com/6Wuu43TIY">
             <div className='form-components'>
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Name" required={true} style={{width:300,height:30,border:1, borderRadius:10}} />
             </div>
-            <div className='form-components'>
+            {/* <div className='form-components'>
             <label htmlFor='company'>Company</label>
             <input type='text' id="company" name="company-name" placeholder="Company" style={{width:300,height:30,border:1, borderRadius:10}}/>
-            </div>
+            </div> */}
             <div className='form-components'>
             <label htmlFor="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Email" required={true} style={{width:300,height:30,border:1, borderRadius:10}} />
@@ -39,23 +42,47 @@ export const ContactForm = () => {
         </form>
         </div>
         <div className='contact-others'>
-            <div className='contact-icons'>
+            <div className='contact-details-group'>
+            <div className='contact-email-details'>
+                <h1>Contact</h1>
+                <div className='contact-details-items'>
+                <Mail color='white' style={{width:50}}/>
+                <p>sanjaisamson3225@gmail.com</p>
+                </div>
+                <div className='contact-details-items'>
+                <Phone color='white' style={{width:50}}/>
+                <p>+91 9400390752</p>
+                </div>
+            </div>
+            <div className='contact-location-details'>
+                <h1>Based on</h1>
+                <div className='contact-details-items'>
+                <Home color='white' style={{width:50,margin:0, padding:0}}/>
+                <p>Kollam, Kerala, India</p>
+                </div>
+            </div>
+            </div>
+            <div className='contact-icons-group'>
+            <div className="contact-icons">
                 <a>
-                <Instagram color='white'/>
-                <p>Instagram</p>
+                <Instagram color='white' style={{width:50}}/>
                 </a>
             </div>
             <div className='contact-icons'>
-                <Mail color='white'/>
-                <p>Email</p>
+                <a>
+                <Mail color='white' style={{width:50}}/>
+                </a>
             </div>
             <div className='contact-icons'>
-                <Facebook color='white'/>
-                <p>Facebook</p>
+                <a>
+                <Facebook color='white' style={{width:50}}/>
+                </a>
             </div>
             <div className='contact-icons'>
-                <Linkedin color='white'/>
-                <p>Linkedin</p>
+                <a>
+                <Linkedin color='white' style={{width:50}}/>
+                </a>
+            </div>
             </div>
         </div>
         </div>

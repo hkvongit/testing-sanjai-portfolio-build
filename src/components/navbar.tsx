@@ -4,7 +4,6 @@ import logo from '../assets/images/logo_white-removebg-preview.png';
 import navIcon1 from '../assets/images/nav-icon1.svg';
 import navIcon2 from '../assets/images/nav-icon2.svg'
 import navIcon3 from '../assets/images/nav-icon3.svg'
-import { Route, BrowserRouter as Router} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link'
 import '../styles/navbar.css'
 import { Link } from "react-router-dom";
@@ -63,17 +62,17 @@ export const NavBar = () => {
             <li> <div className="navbar-text-div" ref={contactsRef} >
               <span className="navbar-text">
               <div className="social-icon">
-                <a href="www.linkedin.com/in/sanjai-samson">
+                <a href="https://www.linkedin.com/in/sanjai-samson" target="_blank">
                   <img src={navIcon1} alt="" />
                 </a>
-                <a href="#">
+                <a href="https://www.facebook.com/sanjai.samson.73?mibextid=ZbWKwL" target="_blank">
                   <img src={navIcon2} alt="" />
                 </a>
-                <a href="https://www.instagram.com/sanjai__samson?igsh=YmtzNGpueXdvd2Fz">
+                <a href="https://www.instagram.com/sanjai__samson?igsh=YmtzNGpueXdvd2Fz" target="_blank">
                   <img src={navIcon3} alt="" />
                 </a>
               </div>
-              <HashLink to="#connect">
+              <HashLink to="/footer">
                 <button className="vvd">
                   <span>Let’s Connect</span>
                 </button>

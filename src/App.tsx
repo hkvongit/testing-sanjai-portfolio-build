@@ -47,6 +47,10 @@ function App() {
               <NavBar />
               <Projects />
             </>} />
+            <Route path="/footer" element={<>
+              <NavBar />
+              <ContactForm/>
+            </>} />
           </Routes>
         </div>
       </div>

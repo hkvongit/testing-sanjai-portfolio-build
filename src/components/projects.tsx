@@ -51,17 +51,13 @@ export const Projects = () =>{
         <div className="projectsContainer">
             <div className="projects-card-glass-box">
                 <div>
-                    <h1>Projects</h1>
+                    <h1 style={{color:"white", fontFamily:"sans-serif", fontSize:80}}>Projects</h1>
                 </div>
-                <div className='cards'>
                 <div className="cardbody">
                     {projectCardData.map((card, index) => (
-                    <div>
                     <Card 
                     key={index} title={card.title} imgUrl={card.imgUrl} description={card.description} />
-                    </div>
                     ))}
-                </div>
                 </div>
           </div>
     </div>

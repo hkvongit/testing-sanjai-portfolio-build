@@ -10,18 +10,11 @@ export const ContactForm = () => {
         <h1 style={{color:"white", fontFamily:"sans-serif", fontSize:80}}>Contact Me</h1>
         <div className="contact-form-container">
             <div className='contact-form'>
-            {/* <div>
-                <p>Let's Talk, Drop me a Message</p>
-            </div> */}
         <form action="https://submit-form.com/6Wuu43TIY">
             <div className='form-components'>
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Name" required={true} style={{width:300,height:30,border:1, borderRadius:10}} />
             </div>
-            {/* <div className='form-components'>
-            <label htmlFor='company'>Company</label>
-            <input type='text' id="company" name="company-name" placeholder="Company" style={{width:300,height:30,border:1, borderRadius:10}}/>
-            </div> */}
             <div className='form-components'>
             <label htmlFor="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Email" required={true} style={{width:300,height:30,border:1, borderRadius:10}} />
@@ -47,11 +40,11 @@ export const ContactForm = () => {
                 <h1>Contact</h1>
                 <div className='contact-details-items'>
                 <Mail color='white' style={{width:50}}/>
-                <p>sanjaisamson3225@gmail.com</p>
+                <a style={{margin:10, textDecoration:'none', color:'white'}} href="mail:sanjaisamson3225@gmail.com">sanjaisamson3225@gmail.com</a>
                 </div>
                 <div className='contact-details-items'>
                 <Phone color='white' style={{width:50}}/>
-                <p>+91 9400390752</p>
+                <a style={{margin:10,textDecoration:'none', color:'white'}} href='tel:+91 9400390752'>+91 9400390752</a>
                 </div>
             </div>
             <div className='contact-location-details'>
@@ -64,7 +57,7 @@ export const ContactForm = () => {
             </div>
             <div className='contact-icons-group'>
             <div className="contact-icons">
-                <a>
+                <a href="https://www.instagram.com/sanjai__samson?igsh=YmtzNGpueXdvd2Fz" target="_blank">
                 <Instagram color='white' style={{width:50}}/>
                 </a>
             </div>
@@ -74,12 +67,12 @@ export const ContactForm = () => {
                 </a>
             </div>
             <div className='contact-icons'>
-                <a>
+                <a href="https://www.facebook.com/sanjai.samson.73?mibextid=ZbWKwL" target="_blank">
                 <Facebook color='white' style={{width:50}}/>
                 </a>
             </div>
             <div className='contact-icons'>
-                <a>
+                <a href="https://www.linkedin.com/in/sanjai-samson" target="_blank">
                 <Linkedin color='white' style={{width:50}}/>
                 </a>
             </div>

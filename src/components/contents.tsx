@@ -73,7 +73,7 @@ export const Content = () => {
                   <a href="https://github.com/Sanjaisamson" target="_blank" rel="noopener noreferrer">
                     <GithubIcon className='github-icon' color='white' />
                   </a>
-                  <a href="mailto:your-email@example.com">
+                  <a href="mailto:sanjaisamson3225@gmail.com" target="_blank" rel="noopener noreferrer">
                     <MailCheckIcon className='mail-icon' color='white' />
                   </a>
                 </div>

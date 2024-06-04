@@ -47,6 +47,7 @@
     gap: 20%;
 }
 .contact-icons{
+    margin: 0 10px;
     color: white;
     display: flex;
     align-items: center;
@@ -57,6 +58,8 @@
     transition: transform 0.3s ease;
 }
 .contact-icons-group{
+    justify-content: center;
+    align-items: center;
     display: flex;
     gap:10px;
     transition: transform 0.3s ease;
@@ -65,7 +68,6 @@
     width: 500px;
     height: auto;
     display: flex;
-    gap: 10%;
 }
 .contact-email-details{
     display: flex;
@@ -78,7 +80,22 @@
     width: 300px;
 }
 .contact-details-items{
-    width: 250px;
+    width: 350px;
     display: flex;
     align-items: center;
+}
+.contact-icons a {
+    display: inline-block;
+}
+  
+.contact-icons:hover {
+    transform: scale(1.2);
+}
+
+.contact-details-items:hover{
+    transition: transform 0.5s ease;
+    color: white;
+    transform: translateY(-0.25em);
+    text-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: scale(1.2);
 }

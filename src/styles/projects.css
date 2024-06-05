@@ -76,3 +76,18 @@
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
 }
+
+@media (max-width: 768px) {
+    .each-card{
+        width: 400px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, .5fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .each-card {
+        width: 400px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  

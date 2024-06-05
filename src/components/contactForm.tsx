@@ -6,8 +6,8 @@ import { Facebook, Home, Instagram, Linkedin, Mail, Phone} from 'lucide-react';
 export const ContactForm = () => {
 
     return (
-        <div>
-        <h1 style={{color:"white", fontFamily:"sans-serif", fontSize:80}}>Contact Me</h1>
+        <div className='contact-wrapper'>
+            <h1 style={{color:"white", fontFamily:"sans-serif", fontSize:80}}>Contact Me</h1>
         <div className="contact-form-container">
             <div className='contact-form'>
         <form action="https://submit-form.com/6Wuu43TIY">

@@ -131,3 +131,20 @@
       transform: translateY(0px);
     }
   }
+
+  @media (max-width: 768px) {
+    .aboutContainer{
+      width:80%;
+      height: 40%;
+      padding: 20px;
+      justify-content: center;
+  }
+} 
+@media (max-width: 480px) {
+  .aboutContainer{
+    width:80%;
+    height: 40%;
+    padding: 20px;
+    justify-content: center;
+}
+} 

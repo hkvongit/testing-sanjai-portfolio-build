@@ -124,3 +124,46 @@
   text-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+  .resume-button{
+    height: 50px;
+  }
+  .button_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 500px;
+    gap: 30px;
+}
+.console-underscore{
+  visibility: hidden;
+}
+.console-container{
+  width: 200px;
+  height: 200px;
+}
+} 
+@media (max-width: 480px) {
+  .resume-button{
+    height: 50px;
+  }
+  .button_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 500px;
+    gap: 30px;
+}
+.console-underscore{
+  visibility: hidden;
+}
+.console-container{
+  width: 200px;
+  height: 200px;
+}
+} 

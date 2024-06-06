@@ -1,11 +1,11 @@
 import '../styles/projects.css'
 import Card from '../components/projectCard'
-import glucometerImg from '../assets/images/project_glucometer_img.jpg'
-import urlShortnerImg from '../assets/images/project_URL_Shortener_img.png'
-import fileStorageSystemImg from '../assets/images/project_file_storage_img.jpg'
-import heartAnalyzerImg from '../assets/images/project_heart_beat_img.jpg'
-import womenSafetyAppImg from '../assets/images/project_women_safety_app_img.png'
-import petrolPumbManagementImg from "../assets/images/project_petrol_pump_img.jpg"
+import glucometerImg from '/images/project_glucometer_img.jpg'
+import urlShortnerImg from '/images/project_URL_Shortener_img.png'
+import fileStorageSystemImg from '/images/project_file_storage_img.jpg'
+import heartAnalyzerImg from '/images/project_heart_beat_img.jpg'
+import womenSafetyAppImg from '/images/project_women_safety_app_img.png'
+import petrolPumbManagementImg from "/images/project_petrol_pump_img.jpg"
 import { useEffect } from 'react';
 
 export const Projects = () =>{

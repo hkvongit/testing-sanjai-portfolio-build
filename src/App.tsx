@@ -10,22 +10,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <div className="area" >
-          <ul className="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div >
-        <div className='pages'>
+     
           <Routes>
             <Route path="/" element={<>
               <NavBar />
@@ -52,8 +37,7 @@ function App() {
               <ContactForm/>
             </>} />
           </Routes>
-        </div>
-      </div>
+  
     </BrowserRouter>
   )
 }
